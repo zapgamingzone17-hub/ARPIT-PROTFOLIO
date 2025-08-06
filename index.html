@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arpit Singh | Creative Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+    body {
+      background: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+      animation: fadeIn 1.5s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    header {
+      background: #111;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
+      margin-top: 1rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-top: 1rem;
+      font-weight: 800;
+      position: relative;
+      display: inline-block;
+      background: linear-gradient(90deg, #ff416c, #ff4b2b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+    header h1::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 120%;
+      height: 120%;
+      border-radius: 10px;
+      background: radial-gradient(circle, rgba(255,65,108,0.3), transparent 70%);
+      z-index: -1;
+    }
+    @keyframes glow {
+      0% {
+        text-shadow: 0 0 5px #ff416c55, 0 0 10px #ff4b2b33;
+      }
+      100% {
+        text-shadow: 0 0 10px #ff416caa, 0 0 20px #ff4b2b99;
+      }
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    .section {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .projects, .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .card h3 {
+      margin: 0.5rem 0 0.2rem;
+    }
+    .contact {
+      text-align: center;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: #111;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #222;
+      color: #fff;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="profile.jpg" alt="Arpit Singh Profile Photo">
+    <h1>Arpit Singh</h1>
+    <p>Video Editor | Thumbnail Artist | Logo & Banner Designer</p>
+  </header>
+
+  <section class="section">
+    <h2>About Me</h2>
+    <p>I'm a passionate video editor and creative designer. I specialize in crafting eye-catching thumbnails, unique logos, and high-quality banners that capture attention and build brands. My goal is to bring every visual idea to life through sharp editing and modern design aesthetics.</p>
+  </section>
+
+  <section class="section">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <img src="https://via.placeholder.com/300x180" alt="Project 1">
+        <h3>Video Edit: Cinematic Trailer</h3>
+        <p>A dramatic trailer edit for a gaming channel with sound sync and transitions.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x180" alt="Project 2">
+        <h3>Thumbnail Pack</h3>
+        <p>Custom YouTube thumbnails that drive clicks and engagement.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x180" alt="Project 3">
+        <h3>Logo + Banner Design</h3>
+        <p>Complete branding package for a tech influencer's channel.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card"><h3>Video Editing</h3><p>Expert in smooth cuts, effects, and transitions.</p></div>
+      <div class="card"><h3>Thumbnails</h3><p>Click-worthy designs tailored for YouTube growth.</p></div>
+      <div class="card"><h3>Logo Design</h3><p>Memorable brand visuals using modern styles.</p></div>
+      <div class="card"><h3>Banner Design</h3><p>High-quality, responsive banner layouts.</p></div>
+    </div>
+  </section>
+
+  <section class="section contact">
+    <h2>Contact</h2>
+    <p>Let's connect and bring your vision to life!</p>
+    <div class="social-icons">
+      <a href="#" target="_blank">🔗</a>
+      <a href="#" target="_blank">📷</a>
+      <a href="#" target="_blank">💼</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Arpit Singh. All rights reserved.</p>
+  </footer>
+</body>
+</html>
